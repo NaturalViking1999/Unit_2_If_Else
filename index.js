@@ -5,13 +5,13 @@ for (let i = 0; i < 100; i++) {
 console.log(numMap);
 for (let key of numMap.keys()) {
     if (key % 5 === 0 && key % 3 === 0) {
-        console.log(key + ' I can believe in that!');
+        console.log(`${key} I can believe in that!`);
     }
     else if (key % 5 === 0) {
-        console.log(key + ' Oops, here is 5');
+        console.log(`${key} Oops, here is 5`);
     }
     else if (key % 3 === 0) {
-        console.log(key + ' Devided by tree');
+        console.log(`${key} Devided by tree`);
     }
 }
 const flat = [
@@ -23,9 +23,9 @@ const flat = [
 ];
 const flatForSergey = () => {
     flat.forEach(item => {
-        const [houseArea, privatisation, owners, street] = item;
+        const [houseArea, , , street] = item;
         if (houseArea === '56' || street == 'Ленина') {
-            console.log(item + ' ' + true);
+            console.log(`${item} true`);
         }
     });
 };
